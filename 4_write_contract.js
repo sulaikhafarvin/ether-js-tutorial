@@ -1,21 +1,21 @@
 const { ethers } = require("ethers");
 
-// change tokens from sapolia to goerli
 
-const INFURA_ID = '9c35f7b0ffdb4bdabf2dfacf385e31e5'
+
+const INFURA_ID = 'Infura id'
 const provider = new ethers.providers.JsonRpcProvider(`https://sepolia.infura.io/v3/${INFURA_ID}`);
 
-const account1 = '0x08bA21d06DCFd6D011C6Eee7B20EC55aEF792e62' ;
-const account2 = '0xF822F7FEF021e38B1195C7A947d52d0eBB1dCbFD';
+const account1 = 'Sender address' ; //sender
+const account2 = 'Reciever address'; // reciever
 
-const privateKey1 = '1ae03179ed247afca908a198079a5271c3673e47c8b6688f3380cc7201f7b213' ;// Private key of account 1
+const privateKey1 = 'Private key of sender' ;// Private key of sender
 const wallet = new ethers.Wallet(privateKey1, provider);
 
 const ERC20_ABI = [
     "function balanceOf(address) view returns(uint)",
     "function transfer(address to , uint amount) returns (bool)",
 ];
-const address = '0x779877A7B0D9E8603169DdbD7836e478b4624789';
+const address = 'Token address'; // token address
 const contract = new ethers.Contract(address,ERC20_ABI,provider);
 
 const main = async () => {
