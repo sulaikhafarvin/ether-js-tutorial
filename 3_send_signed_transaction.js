@@ -1,12 +1,12 @@
 const { ethers } = require("ethers");
 
-const INFURA_ID = '9c35f7b0ffdb4bdabf2dfacf385e31e5';
+const INFURA_ID = 'Infura id';
 const provider = new ethers.providers.JsonRpcProvider(`https://goerli.infura.io/v3/${INFURA_ID}`);
 
-const account1 = '0x08bA21d06DCFd6D011C6Eee7B20EC55aEF792e62'; // sender
-const account2 = '0xF822F7FEF021e38B1195C7A947d52d0eBB1dCbFD';// recipient
+const account1 = 'Sender address'; // sender
+const account2 = 'Recipient address';// recipient
 
-const privateKey1 = '1ae03179ed247afca908a198079a5271c3673e47c8b6688f3380cc7201f7b213'; // Sender private key
+const privateKey1 = 'Sender private key'; // Sender private key
 
 const wallet = new ethers.Wallet(privateKey1,provider);
 
