@@ -1,6 +1,6 @@
 const { ethers } = require("ethers");
 
-const INFURA_ID ='9c35f7b0ffdb4bdabf2dfacf385e31e5'
+const INFURA_ID ='Infura id'
 const provider = new ethers.providers.JsonRpcProvider(`https://mainnet.infura.io/v3/${INFURA_ID}`)
 
 const main = async () => {
